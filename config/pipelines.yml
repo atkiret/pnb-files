@@ -1,0 +1,40 @@
+- pipeline.id: normal
+  pipeline.workers: 20
+  pipeline.batch.size: 1000
+  pipeline.batch.delay: 10 
+  path.config: "/data/log_collector/pipeline/*.conf"
+  queue.type: persisted
+  path.queue: /data/log_collector/queue
+  queue.page_capacity: 64mb
+  queue.max_bytes: 3gb
+
+- pipeline.id: heavy_01
+  pipeline.workers: 20
+  pipeline.batch.size: 1000
+  pipeline.batch.delay: 10 
+  path.config: "/data/log_collector/pipeline_heavy01/*.conf"
+  queue.type: persisted
+  path.queue: /data/log_collector/queue
+  queue.page_capacity: 64mb
+  queue.max_bytes: 9gb
+
+- pipeline.id: medium_01
+  pipeline.workers: 20
+  pipeline.batch.size: 1000
+  pipeline.batch.delay: 10
+  path.config: "/data/log_collector/pipeline_medium01/*.conf"
+  queue.type: persisted
+  path.queue: /data/log_collector/queue
+  queue.page_capacity: 64mb
+  queue.max_bytes: 3gb
+
+- pipeline.id: slow_01
+  pipeline.workers: 20
+  pipeline.batch.size: 1000
+  pipeline.batch.delay: 10
+  path.config: "/data/log_collector/pipeline_slow01/*.conf"
+  queue.type: persisted
+  path.queue: /data/log_collector/queue
+  queue.page_capacity: 64mb
+  queue.max_bytes: 3gb
+

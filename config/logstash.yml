@@ -1,0 +1,19 @@
+# Settings file in YAML
+node.name: pnb_log_collector-01
+path.logs: /data/log_collector/logs
+path.data: /data/log_collector/data
+
+# If using queue.type: persisted, the maximum number of unread events in the queue.
+# Default is 0 (unlimited)
+# queue.max_events: 8000000
+# queue.max_bytes: 10gb
+# queue.checkpoint.acks: 1024
+# queue.checkpoint.writes: 1024
+# queue.checkpoint.interval: 3000
+# dead_letter_queue.enable: false
+# dead_letter_queue.max_bytes: 1024mb
+# path.dead_letter_queue:
+
+
+#dead_letter_queue.enable: true
+
